@@ -1,0 +1,45 @@
+*{
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.introSequence {
+    position:fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.intro{
+    /*relative to parent (logo header). the spans*/
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.intro.active{
+    bottom:0;
+    opacity:1;
+    transition: ease-in-out 0.5s;
+}
+
+.intro.fade{
+    bottom:150px;
+    opacity:0;
+    transition: ease-in-out 0.5s;
+}
