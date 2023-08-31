@@ -34,24 +34,46 @@ header h4{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color: #b30d0d;
 }
 
-.logo{
+
+.Software-logo{
     /*relative to parent (logo header). the spans*/
     position: relative;
     display: inline-block;
-    bottom: -20px;
+    bottom: -50px;
     opacity: 0;
 }
-
-.logo.active{
+.Software-logo.active{
     bottom:0;
     opacity:1;
+    transition: ease-in-out 0.7s;
+}
+
+.Software-logo.fade{
+    bottom:150px;
+    opacity:0;
     transition: ease-in-out 0.5s;
 }
 
-.logo.fade{
+/*For "Crea    Tive*/
+.Creative-logo{
+    /*relative to parent (logo header). the spans*/
+    position: relative;
+    display: inline-block;
+    bottom: -50px;
+    opacity: 0;
+}
+
+
+.Creative-logo.active{
+    bottom:0;
+    opacity:1;
+    transition: ease-in-out 0.7s;
+}
+
+.Creative-logo.fade{
     bottom:150px;
     opacity:0;
     transition: ease-in-out 0.5s;
