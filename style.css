@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 header{
@@ -34,10 +34,10 @@ header h4{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #b30d0d;
+    color: #f9f9f9;
 }
 
-
+/*software dev*/
 .Software-logo{
     /*relative to parent (logo header). the spans*/
     position: relative;
@@ -57,9 +57,33 @@ header h4{
     transition: ease-in-out 0.5s;
 }
 
+
+/*software dev*/
+.AudioVisual-logo{
+    /*relative to parent (logo header). the spans*/
+    position: relative;
+    display: inline-block;
+    bottom: -50px;
+    opacity: 0;
+}
+.AudioVisual-logo.active{
+    bottom:0;
+    opacity:1;
+    transition: ease-in-out 0.7s;
+}
+
+.AudioVisual-logo.fade{
+    bottom:150px;
+    opacity:0;
+    transition: ease-in-out 0.5s;
+}
+
+
 /*For "Crea    Tive*/
 .Creative-logo{
     /*relative to parent (logo header). the spans*/
+    padding: 0;
+    margin: 0;
     position: relative;
     display: inline-block;
     bottom: -50px;
