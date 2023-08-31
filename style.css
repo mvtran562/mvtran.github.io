@@ -1,11 +1,23 @@
 *{
-    font-family: 'Bebas Neue', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
+header{
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 80px;
+}
 
+header h4{
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
 .intro {
     position:fixed;
     z-index: 1;
@@ -33,13 +45,13 @@
     opacity: 0;
 }
 
-.intro.active{
+.logo.active{
     bottom:0;
     opacity:1;
     transition: ease-in-out 0.5s;
 }
 
-.intro.fade{
+.logo.fade{
     bottom:150px;
     opacity:0;
     transition: ease-in-out 0.5s;
