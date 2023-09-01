@@ -6,8 +6,13 @@
 }
 
 
+body{
+    height: 1000px;
+}
+
+
 header{
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -34,13 +39,31 @@ header{
 
 
 /*Home page options appear after scroll*/
-
-
-.options{
-    position: relative;
-    padding-top: 30%;
-    transition:all 0.5s;
+/*General hide and show attributes*/
+.options.hide{
+    opacity:0;
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px; 
+    margin-left: -250px;
+    transition: all 1.5s;
 }
+.options.show{
+    opacity:1;
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px; 
+    margin-left: -250px;
+    transition: all 1.5s;
+}
+
+
 
 .softwareIcon{
     padding-top: 5%;
@@ -131,11 +154,4 @@ header{
 
 
 
-/*General hide and show attributes*/
-.hide{
-    opacity:0;
-}
-.show{
-    opacity:1;
-}
 

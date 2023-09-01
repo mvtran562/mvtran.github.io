@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded',()=>{
                 setTimeout(()=>
                 {   
                     span.classList.add('active');
-                },curr = (i + 1) * 400)
+                },curr = (i + 1) * 350)
             });
             setTimeout(()=>{
                 softwareLogoSpan.forEach((span,i)=>{
@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded',()=>{
                 setTimeout(()=>
                 {
                     span.classList.add('active');
-                }, curr+= ((i + 1) * 350))
+                }, curr+= ((i + 1) * 200))
             });
             
             setTimeout(()=>{
@@ -70,19 +70,24 @@ window.addEventListener('DOMContentLoaded',()=>{
             setTimeout(()=>{
                 intro.style.top = '-100vh';
                 
-            },8000)
+            },curr - 1000)
 
             setTimeout(()=>{
                 mainHeader.classList.add('active');
                 console.log(mainHeader);
+                document.body.style.height = document.getElementById("Home Page").clientHeight + 1000 + 'px';
             },8000+600)
-        
     })
-
-    
-    
-    
-
 })
 
 
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 400) {
+        options.className = "options show"
+    } else {
+        options.className = "options hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
