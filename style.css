@@ -13,7 +13,8 @@ header{
     transform: translate(-50%, -50%);
 }
 
-header img{
+.mainHeader{
+    opacity:0;
     padding-top: 5%;
     position: relative;
     display: inline-block;
@@ -21,14 +22,34 @@ header img{
     width: 300px;
 }
 
+.mainHeader.active{
+    opacity:1;
+    padding-top: 5%;
+    position: relative;
+    display: inline-block;
+    top: -1;
+    width: 300px;
+    transition: ease-in-out 0.7s;
+}
 
-.software{
+
+/*Home page options appear after scroll*/
+
+
+.options{
+    position: relative;
+    padding-top: 30%;
+    transition:all 0.5s;
+}
+
+.softwareIcon{
     padding-top: 5%;
     display: block;
-    width: 35%;
+    width: 100px;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 
 .intro {
@@ -61,7 +82,7 @@ header img{
 .Software-logo.active{
     bottom:0;
     opacity:1;
-    transition: ease-in-out 0.7s;
+    transition: ease-in-out 0.5s;
 }
 
 .Software-logo.fade{
@@ -82,7 +103,7 @@ header img{
 .AudioVisual-logo.active{
     bottom:0;
     opacity:1;
-    transition: ease-in-out 0.7s;
+    transition: ease-in-out 0.5s;
 }
 
 .AudioVisual-logo.fade{
@@ -105,11 +126,16 @@ header img{
 .Creative-logo.active{
     bottom:0;
     opacity:1;
-    transition: ease-in-out 0.7s;
-}
-
-.Creative-logo.fade{
-    bottom:150px;
-    opacity:0;
     transition: ease-in-out 0.5s;
 }
+
+
+
+/*General hide and show attributes*/
+.hide{
+    opacity:0;
+}
+.show{
+    opacity:1;
+}
+

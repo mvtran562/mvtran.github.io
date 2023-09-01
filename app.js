@@ -6,16 +6,19 @@ let softwareLogoSpan = document.querySelectorAll('.Software-logo');
 let audioVisualLogoSpan = document.querySelectorAll('.AudioVisual-logo');
 // "creative"
 let creativeLogoSpan = document.querySelectorAll('.Creative-logo');
-
+// header
+let mainHeader = document.querySelector('.mainHeader');
+// options section on homepage
+options = document.getElementById("optionSection");
 
 window.addEventListener('DOMContentLoaded',()=>{
-   // console.log(logoSpan);
+    console.log("please give me a job");
     curr = 0;
     setTimeout(()=>{
             // software
             softwareLogoSpan.forEach((span,i)=>{
                 setTimeout(()=>
-                {
+                {   
                     span.classList.add('active');
                 },curr = (i + 1) * 400)
             });
@@ -63,14 +66,20 @@ window.addEventListener('DOMContentLoaded',()=>{
             },curr += 2000);
             
             // moves the whole intro sequence up
+            
             setTimeout(()=>{
                 intro.style.top = '-100vh';
+                
             },8000)
-        
+
+            setTimeout(()=>{
+                mainHeader.classList.add('active');
+                console.log(mainHeader);
+            },8000+600)
         
     })
 
-
+    
     
     
 
