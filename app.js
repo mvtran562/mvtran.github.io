@@ -10,6 +10,10 @@ let creativeLogoSpan = document.querySelectorAll('.Creative-logo');
 let mainHeader = document.querySelector('.mainHeader');
 // options section on homepage
 options = document.getElementById("optionSection");
+// software icon from home page
+
+// about me
+aboutMe = document.getElementById("aboutMe");
 
 window.addEventListener('DOMContentLoaded',()=>{
     console.log("please give me a job");
@@ -74,9 +78,16 @@ window.addEventListener('DOMContentLoaded',()=>{
 
             setTimeout(()=>{
                 mainHeader.classList.add('active');
+                aboutMe.classList.add('active');
                 console.log(mainHeader);
                 document.body.style.height = document.getElementById("Home Page").clientHeight + 1000 + 'px';
             },8000+600)
+
+            setTimeout(()=>{
+                
+            },8000+600)
+
+
     })
 })
 
@@ -85,9 +96,23 @@ var myScrollFunc = function () {
     var y = window.scrollY;
     if (y >= 400) {
         options.className = "options show"
+
     } else {
         options.className = "options hide"
+        
     }
 };
 
 window.addEventListener("scroll", myScrollFunc);
+
+
+function onHover()
+{
+    $("#icon1").attr('src', 'SoftwareLogoActive.gif');
+}
+
+function offHover()
+{
+    $("#icon1").attr('src', 'SoftwareLogo.png');
+
+}

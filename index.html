@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,15 +27,21 @@
 
 
     <header>
-      <img src="HeaderLogo.png" class = mainHeader> 
+      <h1>
+        <img src="HeaderLogo.png" class = mainHeader> 
+      </h1>
+      <h2 id="aboutMe" class = aboutMeClass>
+        about me...
+      </h2>
+
     </header>
 
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <div href="#" id="optionSection" class="options hide">
+      <img id="icon1" src="SoftwareLogo.png" class = "softwareIcon" onmouseover= "onHover();" onmouseout="offHover();" />
+    </div>
 
-  <div id="optionSection" class="options hide">
-    <img src="SoftwareLogo.png" class = softwareIcon> 
-  </div>
-
-  <script src = "app.js"></script>
+    <script src = "app.js"></script>
   </body>
 
 </html>
