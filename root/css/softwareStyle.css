@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+body{
+    height: 1000px;
+}
+
+
+header h1{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+header h2{
+    font-family: 'Source Code Pro', monospace;
+    position: absolute;
+    padding-top: 20%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.mainHeader{
+    opacity:1;
+    display: inline-block;
+    top: -1;
+    width: 300px;
+    transition: ease-in-out 0.7s;
+}
+

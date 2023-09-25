@@ -108,11 +108,11 @@ window.addEventListener("scroll", myScrollFunc);
 
 function onHover()
 {
-    $("#icon1").attr('src', 'SoftwareLogoActive.gif');
+    $("#icon1").attr('src', 'images/SoftwareLogoActive.gif');
 }
 
 function offHover()
 {
-    $("#icon1").attr('src', 'SoftwareLogo.png');
+    $("#icon1").attr('src', 'images/SoftwareLogo.png');
 
 }

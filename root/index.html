@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/homeStyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -27,9 +27,11 @@
 
 
     <header>
-      <h1>
-        <img src="HeaderLogo.png" class = mainHeader> 
-      </h1>
+      <a href="https://www.linkedin.com/in/matthew-tran-aaw/" target="_blank">
+        <h1>
+          <img src="images/HeaderLogo.png" class = mainHeader> 
+        </h1>
+      </a>
       <h2 id="aboutMe" class = aboutMeClass>
         soon...
       </h2>
@@ -38,12 +40,17 @@
 
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <div href="#" id="optionSection" class="options hide">
-      <a href="https://www.linkedin.com/in/matthew-tran-aaw/">
-          <img id="icon1" src="SoftwareLogo.png" class = "softwareIcon" onmouseover= "onHover();" onmouseout="offHover();" />
+      <!--
+      <a href="pages/softwarePage.html" target="_blank">
+          <img id="icon1" src="images/SoftwareLogo.png" class = "softwareIcon" onmouseover= "onHover();" onmouseout="offHover();" />
       </a>
+      -->
+      <a href="https://github.com/mvtran562/" target="_blank">
+        <img id="icon1" src="images/SoftwareLogo.png" class = "softwareIcon" onmouseover= "onHover();" onmouseout="offHover();" />
+    </a>
     </div>
 
-    <script src = "app.js"></script>
+    <script src = "scripts/app.js"></script>
   </body>
 
 </html>
