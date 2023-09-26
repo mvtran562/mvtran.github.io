@@ -1,16 +1,10 @@
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo-header');
-// "software"
-let softwareLogoSpan = document.querySelectorAll('.Software-logo');
-// "audio visual"
-let audioVisualLogoSpan = document.querySelectorAll('.AudioVisual-logo');
-// "creative"
-let creativeLogoSpan = document.querySelectorAll('.Creative-logo');
-// header
+// "dj-logo"
+let djLogoSpan = document.querySelectorAll('.DJ-logo');
 let mainHeader = document.querySelector('.mainHeader');
-// options section on homepage
-options = document.getElementById("optionSection");
-// software icon from home page
+
+
 
 // about me
 aboutMe = document.getElementById("aboutMe");
@@ -19,14 +13,14 @@ window.addEventListener('DOMContentLoaded',()=>{
     curr = 0;
     setTimeout(()=>{
             // software
-            softwareLogoSpan.forEach((span,i)=>{
+            djLogoSpan.forEach((span,i)=>{
                 setTimeout(()=>
                 {   
                     span.classList.add('active');
                 },curr = (i + 1) * 350)
             });
             setTimeout(()=>{
-                softwareLogoSpan.forEach((span,i)=>{
+                djLogoSpan.forEach((span,i)=>{
                     setTimeout(()=>{
                         span.classList.remove('active');
                         span.classList.add('fade');

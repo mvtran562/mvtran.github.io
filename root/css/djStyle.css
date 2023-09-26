@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+body{
+    height: 1000px;
+}
+
+
+
+.intro {
+    position:fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f9f9f9;
+}
+
+/*software dev*/
+.DJ-logo{
+    /*relative to parent (logo header). the spans*/
+    position: relative;
+    display: inline-block;
+    bottom: -50px;
+    opacity: 0;
+}
+.DJ-logo.active{
+    bottom:0;
+    opacity:1;
+    transition: ease-in-out 0.5s;
+}
+
+.DJ-logo.fade{
+    bottom:150px;
+    opacity:0;
+    transition: ease-in-out 0.5s;
+}
+
+.horizontalDJPics{
+    width: 100%;
+}
+
+.verticalDJPics{
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
