@@ -106,13 +106,24 @@ var myScrollFunc = function () {
 window.addEventListener("scroll", myScrollFunc);
 
 
-function onHover()
+function onHoverSoftware()
 {
     $("#icon1").attr('src', 'images/SoftwareLogoActive.gif');
 }
 
-function offHover()
+function offHoverSoftware()
 {
     $("#icon1").attr('src', 'images/SoftwareLogo.png');
+
+}
+
+function onHoverDJ()
+{
+    $("#icon2").attr('src', 'images/DJLogoActive.gif');
+}
+
+function offHoverDJ()
+{
+    $("#icon2").attr('src', 'images/DJLogo.png');
 
 }
