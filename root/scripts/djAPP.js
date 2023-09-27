@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded',()=>{
             // moves the whole intro sequence up
             
             setTimeout(()=>{
-                intro.style.top = '-100vh';
+                intro.style.top = '-150vh';
                 
             },curr + 600)
 
