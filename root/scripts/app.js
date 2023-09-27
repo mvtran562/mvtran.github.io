@@ -127,3 +127,14 @@ function offHoverDJ()
     $("#icon2").attr('src', 'images/DJLogo.png');
 
 }
+
+function onHoverPhoto()
+{
+    $("#icon3").attr('src', 'images/photoLogoActive.png');
+}
+
+function offHoverPhoto()
+{
+    $("#icon3").attr('src', 'images/photoLogo.png');
+
+}

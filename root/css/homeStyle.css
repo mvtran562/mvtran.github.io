@@ -196,3 +196,18 @@ header h1{
     transition: all 0.3s;
 }
 
+.photoIcon{
+    padding-top: 5%;
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.photoIcon:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
