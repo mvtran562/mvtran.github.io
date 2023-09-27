@@ -1,6 +1,6 @@
 let intro = document.querySelector('.intro');
 // "dj-logo"
-let djLogoSpan = document.querySelectorAll('.DJ-logo');
+let photoLogoSpan = document.querySelectorAll('.photo-logo');
 let mainHeader = document.querySelector('.mainHeader');
 
 
@@ -15,14 +15,14 @@ window.addEventListener('DOMContentLoaded',()=>{
     curr = 0;
     setTimeout(()=>{
             // software
-            djLogoSpan.forEach((span,i)=>{
+            photoLogoSpan.forEach((span,i)=>{
                 setTimeout(()=>
                 {   
                     span.classList.add('active');
                 },curr = (i + 1) * 350)
             });
             setTimeout(()=>{
-                djLogoSpan.forEach((span,i)=>{
+                photoLogoSpan.forEach((span,i)=>{
                     setTimeout(()=>{
                         span.classList.remove('active');
                         span.classList.add('fade');
