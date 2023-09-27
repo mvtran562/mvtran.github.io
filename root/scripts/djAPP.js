@@ -8,7 +8,7 @@ let mainHeader = document.querySelector('.mainHeader');
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
-  
+
 // about me
 aboutMe = document.getElementById("aboutMe");
 window.addEventListener('DOMContentLoaded',()=>{
@@ -48,9 +48,6 @@ window.addEventListener('DOMContentLoaded',()=>{
             },8000)
 
             setTimeout(()=>{
-                
             },8000+600)
-
-
     })
 })
