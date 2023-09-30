@@ -20,6 +20,20 @@
     transition: 1s;
 }
 
+header{
+    background-image: url("../images/djpic1.jpg");
+    background-size: cover;
+    background-position: 50%;
+    color: white;
+    height:40rem;
+    text-align: center;
+    padding:10vh;
+}
+
+header h1{
+    color: #f0f4f0;
+}
+
 .logo-header{
     position: absolute;
     top: 40%;
