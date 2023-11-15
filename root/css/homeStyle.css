@@ -23,25 +23,26 @@ div.surround {
     justify-content: space-around;
 }
 
-.aboutMeClass{
-    position: fixed;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
-    opacity: 0;
-    transition: ease-in-out 0.7s;
-}
 
-.aboutMeClass.active{
+#aboutMe{
     position: fixed;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 14px;
+}
+
+.aboutMeClass{
+    opacity: 0;
+    transition: ease-in-out 0.7s;
+}
+
+.aboutMeClass.active{
     opacity: 1;
     transition: ease-in-out 0.7s;
 }
+
+
 
 .mainHeader{
     opacity:0;
@@ -85,7 +86,7 @@ div.surround {
 
 footer button {
     padding:1rem;
-    background-color: beige;
+    background-color: rgb(240, 240, 240);
     border: none;
     border-radius: 1rem;
     margin:1rem;
@@ -96,6 +97,20 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+#Bio {
+    position:fixed;
+    top:20vh;
+    padding:1rem;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    border-radius: 1rem;
+    cursor:pointer;
+}
+
+
+
+
 /*software dev*/
 .Software-logo{
     /*relative to parent (logo header). the spans*/

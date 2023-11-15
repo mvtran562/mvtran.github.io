@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+#profile {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+figure{
+    display: flex;
+    justify-content: space-around;
+}
+body{
+    display:flex;
+    justify-content: space-around;
+}
+
+#myBio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+button{
+    padding:1rem;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    border-radius: 1rem;
+    margin:1rem;
+    cursor:pointer;
+}
+
+p{
+    width:50vw;
+}

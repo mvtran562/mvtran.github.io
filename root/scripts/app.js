@@ -13,7 +13,7 @@ options = document.getElementById("optionSection");
 // software icon from home page
 
 // about me
-aboutMe = document.getElementById("aboutMe");
+aboutMe = document.querySelectorAll(".aboutMeClass");
 
 window.addEventListener('DOMContentLoaded',()=>{
     console.log("please give me a job");
@@ -78,7 +78,10 @@ window.addEventListener('DOMContentLoaded',()=>{
 
             setTimeout(()=>{
                 mainHeader.classList.add('active');
-                aboutMe.classList.add('active');
+                aboutMe.forEach((item)=>{
+                    item.classList.add('active');
+                    console.log("Worked");
+                })
                 console.log(mainHeader);
                 document.body.style.height = document.getElementById("Home Page").clientHeight + 1000 + 'px';
             },8000+600)
