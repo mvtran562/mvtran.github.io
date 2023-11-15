@@ -7,7 +7,7 @@
 
 
 body{
-    height: 1000px;
+    height: 120vh;
 }
 
 
@@ -18,9 +18,12 @@ header h1{
     transform: translate(-50%, -50%);
 }
 
+div.surround {
+    display:flex;
+    justify-content: space-around;
+}
 
 .aboutMeClass{
-    font-family: 'Source Code Pro', monospace;
     position: fixed;
     top: 25%;
     left: 50%;
@@ -31,7 +34,6 @@ header h1{
 }
 
 .aboutMeClass.active{
-    font-family: 'Source Code Pro', monospace;
     position: fixed;
     top: 30%;
     left: 50%;
@@ -81,12 +83,24 @@ header h1{
     color: #f9f9f9;
 }
 
+footer button {
+    padding:1rem;
+    background-color: beige;
+    border: none;
+    border-radius: 1rem;
+    margin:1rem;
+    cursor:pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
 /*software dev*/
 .Software-logo{
     /*relative to parent (logo header). the spans*/
     position: relative;
     display: inline-block;
-    bottom: -50px;
     opacity: 0;
 }
 .Software-logo.active{
@@ -96,7 +110,7 @@ header h1{
 }
 
 .Software-logo.fade{
-    bottom:150px;
+    bottom:100px;
     opacity:0;
     transition: ease-in-out 0.5s;
 }
